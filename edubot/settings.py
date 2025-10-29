@@ -11,7 +11,7 @@ SECRET_KEY = 'django-insecure-change_this_to_your_own_key'
 # DEBUG mode per sviluppo
 DEBUG = True
 
-ALLOWED_HOSTS = ['1R.pythonanywhere.com']
+ALLOWED_HOSTS = []
 
 
 # Applicazioni installate
