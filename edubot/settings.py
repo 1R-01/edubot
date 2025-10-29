@@ -11,7 +11,7 @@ SECRET_KEY = 'django-insecure-change_this_to_your_own_key'
 # DEBUG mode per sviluppo
 DEBUG = True
 
-ALLOWED_HOSTS = ['oner-3v94.onrender.com']
+ALLOWED_HOSTS = ['oner-3v94.onrender.com', 'localhost', '127.0.0.1']
 
 
 # Applicazioni installate
