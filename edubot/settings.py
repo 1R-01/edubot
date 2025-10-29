@@ -9,7 +9,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-change_this_to_your_own_key'
 
 # DEBUG mode per sviluppo
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['oner-3v94.onrender.com', 'localhost', '127.0.0.1']
 
@@ -79,10 +79,9 @@ TIME_ZONE = 'Europe/Rome'
 USE_I18N = True
 USE_TZ = True
 
-# Static e media
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [BASE_DIR / 'core' / 'static']
-STATIC_ROOT = BASE_DIR / 'staticfiles'
+STATICFILES_DIRS = [BASE_DIR / "static"]
+STATIC_ROOT = BASE_DIR / "staticfiles"
 
 LOGIN_URL = '/login/'  # o l'URL della tua pagina di login
 
@@ -91,7 +90,7 @@ LOGIN_REDIRECT_URL = '/'  # Dove va dopo il login (dashboard)
 LOGOUT_REDIRECT_URL = '/login/'  # Dove va dopo il logout
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_ROOT = BASE_DIR / "media"
 
 # Default auto field
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
